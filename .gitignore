@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+ckpts
 scripts/dataset_creation
 scripts/isharah_selfie
 build/

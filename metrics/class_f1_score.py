@@ -11,7 +11,7 @@ class ClassF1Score(Metric):
         self.fp = None
         self.fn = None
         self.thresholds = thresholds
-        self.num_classes = num_classes
+        self.num_classes = num_classes+1
         super(ClassF1Score, self).__init__(output_transform=output_transform)
 
     @reinit__is_reduced

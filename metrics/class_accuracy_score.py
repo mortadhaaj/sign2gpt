@@ -11,7 +11,7 @@ class ClassAccuracyScore(Metric):
     ):
         self.correct = None
         self.total = None
-        self.num_classes = num_classes
+        self.num_classes = num_classes+1
         self.thresholds = thresholds
 
         super(ClassAccuracyScore, self).__init__(output_transform=output_transform)

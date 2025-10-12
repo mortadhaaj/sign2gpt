@@ -44,7 +44,7 @@ class IsharahSelfieVideoDataset(Dataset):
 
     def __getitem__(self, idx):
         item = self.items[idx]
-        file_name = item["video_pth"]
+        file_name = item["video_pth"].rsplit("/", 1)[-1].split('.')[0]
 
         if not self.lmdb_util_video:
             self.lmdb_util_video = LMDBUtility(
