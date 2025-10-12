@@ -107,7 +107,7 @@ def get_config():
     cfg.train_ds_params = config_dict.ConfigDict(train_ds_params)
 
     valid_ds_params = {
-        "split": "dev",
+        "split": "val",
         "sep": ",",
         "pseudo_gloss_dir": f"{code_path}/data/isharah_selfie/processed_words.pkl",
         "csv_dir": f"{code_path}/data/isharah_selfie/dataset_random.csv",
